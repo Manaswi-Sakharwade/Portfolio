@@ -1,0 +1,272 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Portfolio</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600&family=Nunito:wght@400;600;700&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="stage">
+  <div class="home">
+    <div class="bar">
+      <button class="title" id="home" type="button">home</button>
+      <div class="tools">
+        <button class="mode" id="sfx" type="button" aria-pressed="true" aria-label="Turn sound effects on or off">sfx on</button>
+        <button class="mode" id="theme" type="button" aria-label="Switch between light and dark">light / dark</button>
+      </div>
+    </div>
+    <div class="inner">
+      <section class="hero">
+        <h1>hi! i&rsquo;m <span>Manaswi Sakharwade</span></h1>
+        <p>student, developer, and researcher</p>
+      </section>
+      <nav class="icons" aria-label="Sections">
+        <button class="icon" data-open="about" type="button"><span class="tile c1"><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21c1-4.500 4-6 8-6s7 1.500 8 6"/></svg></span><span class="lbl">about</span></button>
+        <button class="icon" data-open="education" type="button"><span class="tile c2"><svg viewBox="0 0 24 24"><path d="M2 9l10-5 10 5-10 5z"/><path d="M6 11.500V16c3 2.500 9 2.500 12 0v-4.500"/></svg></span><span class="lbl">education</span></button>
+        <button class="icon" data-open="skills" type="button"><span class="tile c3"><svg viewBox="0 0 24 24"><path d="M8 7l-5 5 5 5M16 7l5 5-5 5M14 4l-4 16"/></svg></span><span class="lbl">skills</span></button>
+        <button class="icon" data-open="projects" type="button"><span class="tile c4"><svg viewBox="0 0 24 24"><path d="M3 7a2 2 0 012-2h4l2 2h8a2 2 0 012 2v8a2 2 0 01-2 2H5a2 2 0 01-2-2z"/></svg></span><span class="lbl">projects</span></button>
+        <button class="icon" data-open="achievements" type="button"><span class="tile c1"><svg viewBox="0 0 24 24"><path d="M8 4h8v6a4 4 0 01-8 0zM8 6H4v2a3 3 0 003 3M16 6h4v2a3 3 0 01-3 3M12 14v4M8 21h8"/></svg></span><span class="lbl">achievements</span></button>
+        <button class="icon" data-open="certificates" type="button"><span class="tile c2"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="12" rx="2"/><circle cx="12" cy="10" r="2.500"/><path d="M9 16l-1 5 4-2 4 2-1-5"/></svg></span><span class="lbl">certificates</span></button>
+        <button class="icon" data-open="involvement" type="button"><span class="tile c3"><svg viewBox="0 0 24 24"><circle cx="8" cy="8" r="3"/><circle cx="17" cy="9" r="2.500"/><path d="M2 20c.5-4 3-6 6-6s5.500 2 6 6M15 14.500c3-.5 5.500 1 6 5.500"/></svg></span><span class="lbl">involvement</span></button>
+        <button class="icon" data-open="research" type="button"><span class="tile c4"><svg viewBox="0 0 24 24"><path d="M9 3h6M10 3v6l-5 9a2 2 0 002 3h10a2 2 0 002-3l-5-9V3"/><path d="M8 15h8"/></svg></span><span class="lbl">research</span></button>
+        <button class="icon" data-open="hobbies" type="button"><span class="tile c1"><svg viewBox="0 0 24 24"><rect x="2" y="7" width="20" height="11" rx="5"/><path d="M7 10.500v4M5 12.500h4"/><circle cx="16" cy="11.500" r=".6"/><circle cx="18.500" cy="13.500" r=".6"/></svg></span><span class="lbl">hobbies</span></button>
+        <button class="icon" data-open="resume" type="button"><span class="tile c4"><svg viewBox="0 0 24 24"><path d="M6 3h8l4 4v14H6z"/><path d="M14 3v4h4M9 12h6M9 16h6"/></svg></span><span class="lbl">resume</span></button>
+        <button class="icon" data-open="contact" type="button"><span class="tile c2"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg></span><span class="lbl">contact</span></button>
+      </nav>
+    </div>
+  </div>
+</main>
+
+<!-- WINDOWS -->
+<section class="win" id="w-about" hidden aria-label="About">
+  <header><h2>about</h2><button class="x" type="button" data-close="about" aria-label="Close about">&times;</button></header>
+  <div class="body">
+    <div class="me"><img class="photo" src="assets/profile/manaswi.jpg" alt="Portrait of Manaswi Sakharwade in a navy blazer and tie, wearing rimless glasses" width="260" height="260">
+      <div><div class="name">Manaswi Sakharwade</div><div class="sub">Computer science student<br>Open to internships and research projects</div></div></div>
+    <h3>hello</h3>
+    <p>Hi, I&rsquo;m an aspiring computer science engineer with a focus on AI & ML, keen to learn and grow in the field. I&rsquo;m fascinated by how a few lines of code can learn from data and make everyday things a little smarter.
+
+</p>
+    <p>On the technical side I&rsquo;ve worked with Python, C, Java and JavaScript, and am currently working on making a Balanced Automatic Question Paper Generator.</p>
+    <p>Alongside college I keep adding to my toolkit: Red Hat courses in Python, Linux system administration and Ansible network automation, an internship at ServiceNow, and projects that run from an Arduino fire alarm to an agentic-AI Automated Home Appliance Control System. I like building something end to end and then explaining it clearly.</p>
+    <div class="btns"><button class="btn" type="button" data-open="projects">See my projects</button><button class="btn alt" type="button" data-open="contact">Contact me</button><button class="btn" type="button" data-open="resume">View resume</button></div>
+    <h3>career interests</h3>
+    <ul><li>Software engineering</li><li>Frontend Developer</li><li>Prompt Engineering</li></ul>
+  </div>
+</section>
+
+<section class="win" id="w-education" hidden aria-label="Education">
+  <header><h2>education</h2><button class="x" type="button" data-close="education" aria-label="Close education">&times;</button></header>
+  <div class="body">
+    <p class="sub">Where I&rsquo;ve studied, newest first.</p>
+    <ul class="tl">
+      <li><b>B.Tech in Computer Science</b><br>Symbiosis Institute of Technology, Nagpur<br><span class="yr">2024-2028</span></li>
+      <li><b>Class XII (CBSE)</b><br>Delhi Public School, Durg<br><span class="yr">2022-2023</span></li>
+      <li><b>Class X (CBSE)</b><br>Delhi Public School, Durg<br><span class="yr">2020-2021</span></li>
+    </ul>
+  </div>
+</section>
+
+<section class="win" id="w-skills" hidden aria-label="Skills">
+  <header><h2>technical skills</h2><button class="x" type="button" data-close="skills" aria-label="Close skills">&times;</button></header>
+  <div class="body">
+    <p class="sub">Languages and tools I work with. Filter by area.</p>
+    <div class="chips filter" id="skillFilter"></div>
+    <ul class="chips" id="skillList"></ul>
+  </div>
+</section>
+
+<section class="win" id="w-projects" hidden aria-label="Projects">
+  <header><h2>projects</h2><button class="x" type="button" data-close="projects" aria-label="Close projects">&times;</button></header>
+  <div class="body">
+    <h3>currently working on</h3>
+    <article class="proj">
+      <h4>Question Paper Generator <span class="status">in progress</span></h4>
+      <p class="sub">A web tool that builds exam papers from a question bank. Shown here with a sample Python Programming (CS201) paper.</p>
+      <div class="pshots mix">
+        <button class="pshot" type="button" data-src="assets/projects/qpg-generated-paper.jpg" data-title="Generated question paper" data-sub="A balanced paper with sections A, B and C, each question tagged with its unit and course outcome" aria-label="Open photo: generated question paper"><img src="assets/projects/qpg-generated-paper.jpg" alt="Generated exam paper with Section A very short answer, Section B short program and Section C long program questions" loading="lazy"></button>
+        <button class="pshot" type="button" data-src="assets/projects/qpg-paper-pattern.jpg" data-title="Paper pattern builder" data-sub="Set sections, question types, counts and marks, with the pattern total checked against the target" aria-label="Open photo: paper pattern builder"><img src="assets/projects/qpg-paper-pattern.jpg" alt="Paper pattern form with three sections, a question bank browser and a generate balanced paper button" loading="lazy"></button>
+        <button class="pshot" type="button" data-src="assets/projects/qpg-co-ledger.jpg" data-title="CO marks ledger" data-sub="Marks per course outcome, with a balanced stamp when every outcome gets exactly the same marks" aria-label="Open photo: course outcome marks ledger"><img src="assets/projects/qpg-co-ledger.jpg" alt="Table showing 12 marks for each of CO1 to CO5 with a balanced stamp" loading="lazy"></button>
+        <button class="pshot" type="button" data-src="assets/projects/qpg-exam-details.jpg" data-title="Exam details and syllabus upload" data-sub="Exam details, plus a syllabus upload (.txt, .pdf or .docx) or pasted syllabus text" aria-label="Open photo: exam details and syllabus upload"><img src="assets/projects/qpg-exam-details.jpg" alt="Exam details form and syllabus upload box" loading="lazy"></button>
+        <button class="pshot" type="button" data-src="assets/projects/qpg-units-outcomes.jpg" data-title="Syllabus units and course outcomes" data-sub="Five units mapped one to one to course outcomes CO1 to CO5, with 518 questions in the bank" aria-label="Open photo: syllabus units and course outcomes"><img src="assets/projects/qpg-units-outcomes.jpg" alt="Five syllabus units, each mapped to a course outcome and a question bank count" loading="lazy"></button>
+      </div>
+      <p>Setting a paper by hand makes it hard to cover every course outcome evenly. This tool takes the paper pattern (sections, question types, counts and marks) and spreads the marks as evenly as possible across all course outcomes before it picks a real question for each slot from a bank of 518 questions. A marks ledger then shows the result per outcome, and the finished paper can be printed or saved.</p>
+      <ul>
+        <li><b>Set up:</b> enter the exam details and upload or paste the syllabus to fill in unit names and outcome text.</li>
+        <li><b>Balance:</b> marks are split evenly across CO1 to CO5 on every generate.</li>
+        <li><b>Output:</b> a formatted paper with each question tagged by unit and outcome, and a ledger that confirms the balance.</li>
+      </ul>
+      <span class="tag">Web app</span><span class="tag">Question bank</span><span class="tag">Outcome-based education</span><span class="tag">Python syllabus</span>
+    </article>
+    <h3>completed projects</h3>
+    <article class="proj">
+      <h4>AI Powered Digital Twin for Smart Homes</h4>
+      <p class="sub">B.Tech CSE project (PBL), Symbiosis Institute of Technology, Nagpur, 2025-26. Guide: Dr. Sagarkumar S. Badhiye. Team: Manaswi Sakharwade, Samprada Kapate, Sanika Mendjoge.</p>
+      <div class="pshots">
+        <button class="pshot" type="button" data-src="assets/projects/prototype-wiring.jpg" data-title="Prototype wiring" data-sub="Microcontroller, breadboard, LED and sensor wiring inside the prototype box" aria-label="Open photo: prototype wiring"><img src="assets/projects/prototype-wiring.jpg" alt="Microcontroller, breadboard and wires inside the prototype box, lit blue" loading="lazy"></button>
+        <button class="pshot" type="button" data-src="assets/projects/prototype-fan.jpg" data-title="Cooling fan" data-sub="Fan mounted in a popsicle-stick frame on the side of the box" aria-label="Open photo: cooling fan"><img src="assets/projects/prototype-fan.jpg" alt="Small fan set into a popsicle-stick frame on a cardboard box" loading="lazy"></button>
+        <button class="pshot" type="button" data-src="assets/projects/prototype-lcd.jpg" data-title="Live LCD readout" data-sub="LCD showing temperature 41.1 C, light level 224 and fan PWM 50" aria-label="Open photo: LCD readout"><img src="assets/projects/prototype-lcd.jpg" alt="LCD screen reading T 41.1 C, Light 224, PWM 50" loading="lazy"></button>
+      </div>
+      <p>A low-cost prototype that mirrors a smart home in a digital twin and automates it with machine learning. Temperature, motion and light sensors feed a microcontroller, and Scikit-Learn models (decision tree, KNN and logistic regression were compared) predict occupancy and room conditions. Relays then switch the lights and the cooling fan, and an LCD on the box shows live temperature, light level and fan speed.</p>
+      <span class="tag">Python</span><span class="tag">Scikit-Learn</span><span class="tag">ESP32 / Arduino</span><span class="tag">MQTT</span><span class="tag">IoT</span>
+      <div class="btns"><a class="btn" href="assets/projects/digital-twin-smart-home-report.pdf" target="_blank" rel="noopener">open project report (PDF)</a><button class="btn alt" type="button" data-open="research">read the research paper</button></div>
+    </article>
+    <article class="proj">
+      <h4>Smart Waste Management System</h4>
+      <p class="sub">B.Tech CSE project (PBL), Symbiosis Institute of Technology, Nagpur, 2025-26. Guide: Dr. Sagarkumar S. Badhiye. Team: Manaswi Sakharwade, Samprada Kapate, Sanika Mendjoge.</p>
+      <div class="pshots four">
+        <button class="pshot" type="button" data-src="assets/projects/smart-bin-open.jpg" data-title="Smart bin prototype" data-sub="Servo-driven cardboard lid on a household bin, with the electronics fixed inside" aria-label="Open photo: smart bin prototype"><img src="assets/projects/smart-bin-open.jpg" alt="Green bin with a cardboard lid raised by a servo motor, wires and an LCD inside" loading="lazy"></button>
+        <button class="pshot" type="button" data-src="assets/projects/smart-bin-inside.jpg" data-title="Inside the bin" data-sub="Microcontroller board, servo motor and ultrasonic sensors wired up inside the bin" aria-label="Open photo: inside the bin"><img src="assets/projects/smart-bin-inside.jpg" alt="Inside of the bin showing a microcontroller board, servo motor, ultrasonic sensors and jumper wires" loading="lazy"></button>
+        <button class="pshot" type="button" data-src="assets/projects/smart-bin-front.jpg" data-title="Sensor and LCD" data-sub="Ultrasonic sensor on the front of the bin and an LCD on the rim" aria-label="Open photo: sensor and LCD"><img src="assets/projects/smart-bin-front.jpg" alt="Front of the green bin with an ultrasonic sensor and an LCD mounted on it" loading="lazy"></button>
+        <button class="pshot" type="button" data-src="assets/projects/smart-bin-app.jpg" data-title="Mobile dashboard" data-sub="Smart Bin app screen with an on/off switch and a fill-level gauge from 0 to 100" aria-label="Open photo: mobile dashboard"><img src="assets/projects/smart-bin-app.jpg" alt="Phone screen titled Smart Bin with an OFF button and a gauge reading 0 out of 100" loading="lazy"></button>
+      </div>
+      <p>An IoT dustbin that tells you how full it is. Ultrasonic sensors measure the fill level, an ESP32 microcontroller reads them, and a servo motor opens and closes the lid automatically. Readings are sent over Wi-Fi to a dashboard, which shows whether the bin is empty, partially filled or full and raises an alert when it needs emptying. The prototype cost about &#8377;1,200 to &#8377;1,400 to build.</p>
+      <ul>
+        <li><b>Sense:</b> ultrasonic sensors measure the distance from the lid to the waste.</li>
+        <li><b>Decide:</b> threshold logic turns the distance into empty, half-filled or full.</li>
+        <li><b>Alert:</b> the dashboard updates live and flags a full bin so it can be collected on time.</li>
+      </ul>
+      <span class="tag">ESP32 / Arduino</span><span class="tag">Ultrasonic sensor</span><span class="tag">Servo motor</span><span class="tag">IoT</span><span class="tag">Embedded C/C++</span>
+      <div class="btns"><a class="btn" href="assets/projects/smart-waste-management-report.pdf" target="_blank" rel="noopener">open project report (PDF)</a><button class="btn alt" type="button" data-open="research">read the research paper</button></div>
+    </article>
+    <article class="proj">
+      <h4>Fire Detection System using Arduino</h4>
+      <p class="sub">Microcontrollers and Embedded Systems course project, Symbiosis Institute of Technology, Nagpur.</p>
+      <div class="pshots one">
+        <button class="pshot" type="button" data-src="assets/projects/fire-detection-arduino.jpg" data-title="Fire detection circuit" data-sub="Arduino Uno wired to a flame sensor module and a buzzer" aria-label="Open photo: fire detection circuit"><img src="assets/projects/fire-detection-arduino.jpg" alt="Arduino Uno connected to a flame sensor module with a blue potentiometer and a black buzzer" loading="lazy"></button>
+      </div>
+      <p>A low-cost fire alarm built on an Arduino Uno. A flame sensor module picks up the infrared light given off by a flame, and the Arduino reads it continuously and sounds a buzzer as soon as a flame is detected.</p>
+      <ul>
+        <li><b>Sense:</b> the flame sensor module watches for fire, and its sensitivity is set with the potentiometer on the board.</li>
+        <li><b>Decide:</b> the Arduino reads the sensor and checks whether a flame is present.</li>
+        <li><b>Alert:</b> the Arduino switches on the buzzer to raise the alarm.</li>
+      </ul>
+      <span class="tag">Arduino Uno</span><span class="tag">Flame sensor</span><span class="tag">Buzzer</span><span class="tag">Embedded C/C++</span>
+    </article>
+    <article class="proj">
+      <h4>Automated Home Appliance Control System</h4>
+      <p class="sub">B.Tech CSE project, Symbiosis Institute of Technology, Nagpur, 2026-27. Guide: Dr. Parag Naik.</p>
+      <div class="pshots two">
+        <button class="pshot" type="button" data-src="assets/projects/home-control-dashboard.jpg" data-title="Sensors and appliances dashboard" data-sub="Five-layer pipeline, live power draw, sensor readings per room and relay switches for each appliance" aria-label="Open photo: sensors and appliances dashboard"><img src="assets/projects/home-control-dashboard.jpg" alt="Dark dashboard with a five-layer pipeline, power draw stats and motion, light and temperature sensor cards" loading="lazy"></button>
+        <button class="pshot" type="button" data-src="assets/projects/home-control-rules.jpg" data-title="Automation rules" data-sub="Rules such as motion plus low light switching a lamp on, with an activity log of each Observe, Decide, Act step" aria-label="Open photo: automation rules"><img src="assets/projects/home-control-rules.jpg" alt="Automation rules list with toggle switches and an activity log" loading="lazy"></button>
+      </div>
+      <p>A home automation system that switches lights, fans and plugs on its own instead of waiting for someone to flip a switch. Motion, light, temperature and gas sensors feed an ESP32 controller, a rule engine decides what each appliance should do, and relays carry out the action. The web dashboard shows every room, lets you override any appliance by hand and lets you create new rules. The dashboard demo runs on simulated sensor data.</p>
+      <ul>
+        <li><b>Observe and analyze:</b> read motion, light level and temperature, and check the current appliance states.</li>
+        <li><b>Decide and act:</b> rules such as motion plus low light turn a light on, and high temperature turns a fan on, through relays.</li>
+        <li><b>Update:</b> the dashboard shows the new state and logs every step of the cycle.</li>
+      </ul>
+      <span class="tag">ESP32</span><span class="tag">Relay modules</span><span class="tag">JavaScript</span><span class="tag">IoT</span><span class="tag">Home automation</span>
+      <div class="btns"><a class="btn" href="https://home-control-911k5is47-manaswi-sakharwade.vercel.app/" target="_blank" rel="noopener">open live demo</a><a class="btn alt" href="assets/projects/home-control-report.pdf" target="_blank" rel="noopener">open project report (PDF)</a></div>
+    </article>
+  </div>
+</section>
+
+<section class="win" id="w-achievements" hidden aria-label="Achievements">
+  <header><h2>achievements</h2><button class="x" type="button" data-close="achievements" aria-label="Close achievements">&times;</button></header>
+  <div class="body">
+    <ul class="tl">
+      <li><b>Two Reseach Papers</b><br>Co-author on AI Powered Digital Twins for Smart Homes and Smart Waste Management System.<br><span class="yr">2025</span></li>
+      <li><b>Internship Completed</b><br>Completed the virtual internship on system administration from ServiceNow and Smartbridge.<br><span class="yr">2024</span></li>
+    </ul>
+  </div>
+</section>
+
+<section class="win" id="w-certificates" hidden aria-label="Certificates">
+  <header><h2>certificates</h2><button class="x" type="button" data-close="certificates" aria-label="Close certificates">&times;</button></header>
+  <div class="body">
+    <p class="sub">Click a certificate to open it larger. Filter by issuer.</p>
+    <div class="chips filter" id="certFilter"></div>
+    <div class="certs" id="certGrid"></div>
+  </div>
+</section>
+
+<section class="win" id="w-involvement" hidden aria-label="Involvement">
+  <header><h2>clubs, events and volunteering</h2><button class="x" type="button" data-close="involvement" aria-label="Close involvement">&times;</button></header>
+  <div class="body">
+    <h3>clubs</h3>
+    <ul class="tl"><li><b>Technical Clubs and Cultural Clubs</b><br>Member of IEEE club<br><li>Member of Litrary club</li><span class="yr">2024 to now</span></li></ul>
+    <h3>events</h3>
+    <ul class="tl"><li><b>College Fest</b><br>Volunteer on the stage team.<br><span class="yr">2024</span></li></ul>
+    <h3>volunteering</h3>
+    <ul class="tl"><li><b>Teaching Drive</b><br>Taught basic computer skills to school students.<br><span class="yr">2024</span></li></ul>
+  </div>
+</section>
+
+<section class="win" id="w-research" hidden aria-label="Research">
+  <header><h2>research</h2><button class="x" type="button" data-close="research" aria-label="Close research">&times;</button></header>
+  <div class="body">
+    <p class="sub">Research papers, written with my team at Symbiosis Institute of Technology, Nagpur.</p>
+    <article class="paper">
+      <a class="pthumb" href="assets/research/digital-twin-smart-homes.pdf" target="_blank" rel="noopener" aria-label="Open the AI Powered Digital Twins for Smart Homes paper as a PDF"><img src="assets/research/digital-twin-smart-homes.jpg" alt="First page of the paper AI Powered Digital Twins for Smart Homes" loading="lazy"></a>
+      <div class="ptext">
+        <h4>AI Powered Digital Twins for Smart Homes</h4>
+        <p class="sub">Manaswi Sakharwade, Samprada Kapate, Sanika Mendjoge, Prof./Dr Sagarkumar S. Badhiye</p>
+        <p>A digital twin for smart homes that controls light and temperature using Arduino motion sensing (PIR and DHT11 sensors) and a machine learning model of occupancy patterns. The prototype reports a 19% average drop in energy use, response times under 300 ms and user satisfaction above 4.5 out of 5.</p>
+        <span class="tag">Digital twin</span><span class="tag">IoT</span><span class="tag">Machine learning</span><span class="tag">8 pages</span>
+        <div class="btns"><a class="btn" href="assets/research/digital-twin-smart-homes.pdf" target="_blank" rel="noopener">open PDF</a></div>
+      </div>
+    </article>
+    <article class="paper">
+      <a class="pthumb" href="assets/research/smart-waste-management.pdf" target="_blank" rel="noopener" aria-label="Open the Smart Waste Management System paper as a PDF"><img src="assets/research/smart-waste-management.jpg" alt="First page of the paper Smart Waste Management System" loading="lazy"></a>
+      <div class="ptext">
+        <h4>Smart Waste Management System</h4>
+        <p class="sub">Manaswi Sakharwade, Samprada Kapate, Sanika Mendjoge, Prof./Dr Sagarkumar S. Badhiye</p>
+        <p>An IoT waste monitoring system that uses ultrasonic sensors with ESP32 or Arduino boards and a web dashboard to track bin levels in real time. The prototype showed better collection efficiency, lower fuel use, fewer overflows and faster response.</p>
+        <span class="tag">IoT</span><span class="tag">ESP32 / Arduino</span><span class="tag">Smart city</span><span class="tag">8 pages</span>
+        <div class="btns"><a class="btn" href="assets/research/smart-waste-management.pdf" target="_blank" rel="noopener">open PDF</a></div>
+      </div>
+    </article>
+  </div>
+</section>
+
+<section class="win" id="w-hobbies" hidden aria-label="Hobbies">
+  <header><h2>hobbies</h2><button class="x" type="button" data-close="hobbies" aria-label="Close hobbies">&times;</button></header>
+  <div class="body">
+    <p class="sub">What I do when I&rsquo;m not studying.</p>
+    <div class="hobbies">
+      <div class="hobby"><i></i><b>Journaling</b><span>Bullet Journaling and Junk Journaling.</span></div>
+      <div class="hobby"><i></i><b>Music</b><span>Listening to albums, finding genres new to me.</span></div>
+      <div class="hobby"><i></i><b>Reading</b><span>Litrary Fiction and Classics or what I like to call wacky, slow psyclogical meltdown of women.</span></div>
+      <div class="hobby"><i></i><b>Gaming</b><span>Sudoko</span></div>
+      <div class="hobby"><i></i><b>Travel</b><span>Day trips and new places</span></div>
+      <div class="hobby"><i></i><b>Photography</b><span>Everyday things around me. Mostly sunsets or inanimate objects that are particularly interesting.</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="win" id="w-resume" hidden aria-label="Resume">
+  <header><h2>resume</h2><button class="x" type="button" data-close="resume" aria-label="Close resume">&times;</button></header>
+  <div class="body">
+    <p class="sub">One page PDF: summary, projects, education, certifications and skills. Click the page to open it full size.</p>
+    <div class="btns" style="margin:0 0 14px"><a class="btn" href="assets/resume.pdf" target="_blank" rel="noopener">open PDF</a><a class="btn alt" href="assets/resume.pdf" download="Manaswi-Sakharwade-Resume.pdf">download PDF</a></div>
+    <a class="rpage" href="assets/resume.pdf" target="_blank" rel="noopener" aria-label="Open my resume as a PDF"><img src="assets/resume-large.jpg" alt="Manaswi Sakharwade's resume: AI and ML student, with summary, projects, education, certifications and skills" loading="lazy"></a>
+  </div>
+</section>
+
+<section class="win" id="w-contact" hidden aria-label="Contact">
+  <header><h2>contact</h2><button class="x" type="button" data-close="contact" aria-label="Close contact">&times;</button></header>
+  <div class="body">
+    <p>Open to internships, research projects and placements.</p>
+    <div class="row"><b>Email</b><span class="val">manaswisakharwade6@gmail.com</span><button class="btn alt" type="button" data-copy="manaswisakharwade6@gmail.com">copy</button></div>
+    <div class="row"><b>Phone</b><span class="val">+91 74155 92243</span><button class="btn alt" type="button" data-copy="+91 74155 92243">copy</button></div>
+    <div class="btns"><a class="btn" href="https://www.linkedin.com/in/manaswi-sakharwade-88298b384/?isSelfProfile=true" target="_blank" rel="noopener">LinkedIn</a><a class="btn" href="https://github.com/Manaswi-Sakharwade" target="_blank" rel="noopener">GitHub</a><a class="btn alt" href="assets/resume.pdf" target="_blank" rel="noopener">Resume</a></div>
+  </div>
+</section>
+
+<div class="overlay" id="welcome"><div class="dlg" role="dialog" aria-labelledby="wt">
+  <h2 id="wt">hey there!</h2>
+  <p>This site is best on a desktop and has sound effects. Use the sfx button in the home bar to turn them off.</p>
+  <button class="btn" id="okay" type="button">okay</button>
+</div></div>
+
+<div class="overlay" id="lightbox" hidden><div class="lb" role="dialog" aria-label="Certificate preview">
+  <img id="lbImg" alt="">
+  <div class="lbmeta"><b id="lbTitle"></b><span class="sub" id="lbSub"></span></div>
+  <div class="btns"><a class="btn" id="lbPdf" href="#" target="_blank" rel="noopener">open PDF</a><a class="btn alt" id="lbVerify" href="#" target="_blank" rel="noopener" hidden>verify online</a><button class="btn alt" id="lbClose" type="button">close</button></div>
+</div></div>
+<script src="script.js"></script>
+</body>
+</html>
